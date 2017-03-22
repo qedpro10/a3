@@ -11,13 +11,13 @@
 |
 */
 
+
+Route::get('/', 'WelcomeController');
+
+Route::get('/translate/{translation?}', 'PigController@translate');
+
 Route::any('/practice/{n?}', 'PracticeController@index');
 
-//Route::get('/', 'WelcomeController');
-
-Route::get('/', function () {
-    return view('welcome');
-});
 
 if(config('app.env') == 'local') {
     Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');

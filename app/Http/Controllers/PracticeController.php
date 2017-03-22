@@ -51,7 +51,7 @@ class PracticeController extends Controller {
 	*
 	*/
     public function practice1() {
-        dump('This is the first example.');
+        dump(config('default_num'));
     }
     /**
 	* ANY (GET/POST/PUT/DELETE)
