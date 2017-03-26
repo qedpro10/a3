@@ -14,7 +14,7 @@
 
 Route::get('/', 'WelcomeController');
 
-Route::get('/translate/{translation?}', 'PigController@translate');
+Route::get('/play/', 'TriviaController@play');
 
 Route::any('/practice/{n?}', 'PracticeController@index');
 
