@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Rych\Random\Random;
+//use Rych\Random\Random;
 use App;
 //use Debugbar;
 
@@ -21,7 +21,7 @@ class PracticeController extends Controller {
     *
     */
     public function practice3() {
-        $random = new Random();
+        $random = new \Random();
         // Generate a 16-byte string of random raw data
         $randomBytes = $random->getRandomBytes(16);
         dump($randomBytes);
@@ -51,7 +51,7 @@ class PracticeController extends Controller {
 	*
 	*/
     public function practice1() {
-        dump(config('default_num'));
+        dump(config('piglatin.default_num'));
     }
     /**
 	* ANY (GET/POST/PUT/DELETE)
