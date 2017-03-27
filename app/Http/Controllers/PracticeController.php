@@ -9,6 +9,18 @@ use App;
 
 class PracticeController extends Controller {
 
+    public function practice5() {
+        $questions = file_get_contents(database_path().'/questions.json');
+        dump($questions);
+        # Decode the book JSON data into an array
+        # Nothing fancy here; just a built in PHP method
+        $game = json_decode($questions, true);
+
+        $q_number = count($game);
+
+
+        dump($game[1]['question']);
+    }
     /**
     *
     */

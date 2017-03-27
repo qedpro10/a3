@@ -12,9 +12,12 @@
 */
 
 
-Route::get('/', 'WelcomeController');
+Route::get('/', 'TriviaController@index');
 
-Route::get('/play/', 'TriviaController@play');
+Route::get('/play/', 'TriviaController@getGame');
+
+//Route::get('/game/', 'TriviaController@processQuestion');
+Route::post('/game/', 'TriviaController@processQuestion');
 
 Route::any('/practice/{n?}', 'PracticeController@index');
 
