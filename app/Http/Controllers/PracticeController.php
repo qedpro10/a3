@@ -51,7 +51,7 @@ class PracticeController extends Controller {
 	*
 	*/
     public function practice1() {
-        dump(config('piglatin.default_num'));
+        dump(config('trivia.default_num'));
     }
     /**
 	* ANY (GET/POST/PUT/DELETE)

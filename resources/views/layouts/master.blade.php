@@ -2,11 +2,11 @@
 <html>
 <head>
     <title>
-        @yield('title', 'Pig Latin Translator')
+        @yield('title', 'Triviae Meretrix')
     </title>
 
     <meta charset='utf-8'>
-    <link href="/css/piglatin.css" type='text/css' rel='stylesheet'>
+    <link href="/css/trivia.css" type='text/css' rel='stylesheet'>
 
     @stack('head')
 
@@ -15,9 +15,9 @@
 
     <header>
         <img
-        src='https://i.ytimg.com/vi/Ikw5HhxC5UM/hqdefault.jpg'
+        src='images/questionmark.png'
         style='width:300px'
-        alt='Pig Latin Logo'>
+        alt='Triviae Meretrix Logo'>
     </header>
 
     <section>

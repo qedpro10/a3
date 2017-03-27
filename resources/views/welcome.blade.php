@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Pig Latin Translator</title>
-    </head>
-    <body>
-        <h1>Oinkvey</h1>
-    </body>
-</html>
+@extends ('layouts.master')
+
+@section('title')
+
+@endsection
+
+@section('content')
+    <h1>Welcome</h1>
+@endsection
