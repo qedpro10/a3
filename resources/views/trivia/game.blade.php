@@ -8,7 +8,7 @@
 @section('content')
     <h1>Question {{ $qno }}</h1>
 
-    <form method='POST' action='game'>
+    <form method='POST' action='/game'>
         {{ csrf_field() }}
         <h2>{{ $game[$qno]['question'] }}</h2>
         <ul>

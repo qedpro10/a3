@@ -16,7 +16,7 @@
     <header>
         <img
         src='images/questionmark.png'
-        style='width:300px'
+        style='width:200px'
         alt='Triviae Meretrix Logo'>
     </header>
 

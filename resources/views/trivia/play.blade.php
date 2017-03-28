@@ -11,7 +11,7 @@
     <form method='GET' action='/play'>
         <label>Choose your poison: </label>
         <select name='category'>
-            <option value="pick" {{ ($category == 'pick') ? 'SELECTED' : '' }}>pick</option>
+            <option value='' {{ ($category == 'pick') ? 'SELECTED' : '' }}>pick</option>
             <option value="history" {{ ($category == 'history') ? 'SELECTED' : '' }}>History</option>
             <option value="geography" {{ ($category == 'geography') ? 'SELECTED' : '' }}>Geography</option>
             <option value="startrek" {{ ($category == 'startrek') ? 'SELECTED' : '' }}>Star Trek</option>
@@ -32,4 +32,12 @@
             <input type='submit' class="btn btn-info btn-sm " value='Play'>
         </div>
     </form>
+
+    @if(count($errors) > 0)
+    <ul>
+        @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+        @endforeach
+    </ul>
+    @endif
 @endsection
