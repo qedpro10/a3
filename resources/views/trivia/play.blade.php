@@ -8,7 +8,8 @@
 @section('content')
     <h1>Welcome to Triviae Meretrix</h1>
 
-    <form method='GET' action='/play'>
+    <form method='POST' action='/play'>
+        {{ csrf_field() }}
         <label>Choose your poison: </label>
         <select name='category'>
             <option value='' {{ ($category == 'pick') ? 'SELECTED' : '' }}>pick</option>

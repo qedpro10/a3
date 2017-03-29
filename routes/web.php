@@ -12,9 +12,13 @@
 */
 
 
+//Route::any('/', function() {
+//    return redirect()->action('TriviaController@getGame');
+//});
+
 Route::any('/', 'TriviaController@index');
 
-Route::get('/play', 'TriviaController@getGame');
+Route::post('/play', 'TriviaController@postGame');
 
 //Route::get('/game/', 'TriviaController@processQuestion');
 Route::post('/game', 'TriviaController@processQuestion');

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 class TriviaController extends Controller
 {
+
     /**
 	* GET
     * /
@@ -22,16 +23,18 @@ class TriviaController extends Controller
     * GET
     * /play
     */
-    public function getGame(Request $request) {
+    public function postGame(Request $request) {
 
-        $this->validate($request, [
-            'category' => 'required',
-        ]);
+        //$this->validate($request, [
+        //    'category' => 'required',
+        //]);
+
+
         # Store the game category in a variable for easy access
         # The second parameter (null) is what the variable
         # will be set to *if* category is not in the request.
-        $game = null;
-        $q_number = 1000;
+        //$game = null;
+        //$q_number = 1000;
         $category = $request->input('category', null);
         $elite = $request->has('elite');
         $gametype = $request->input('gametype', null);
@@ -42,15 +45,20 @@ class TriviaController extends Controller
         # Decode the book JSON data into an array
         # Nothing fancy here; just a built in PHP method
         $game = json_decode($questions, true);
-
-        $q_number = count($game);
+        // initialize the # of correct answers
+        $score = 0;
+        // set the question number to the first question
         $qno = 1;
-        //dump($q_number);
+
+        // save this data in the session
+        $request->session()->put('game', $game);
+        $request->session()->put('qno', $qno);
+        $request->session()->put('score', $score);
 
         return view('trivia.game')->with([
-            'q_number' => $q_number,
             'game' => $game,
             'qno' => $qno,
+            'score' => $score,
         ]);
     }
 
@@ -60,12 +68,41 @@ class TriviaController extends Controller
     * Process the question and add to score
     */
     public function processQuestion(Request $request) {
-        dump($request);
-        // how to get this information
+        // get the game session data
+        $game = $request->session()->get('game', 'default');
+        $qno = $request->session()->get('qno', 'default');
+        $score = $request->session()->get('score', 'default');
+
+
+        $answer = $game[$qno]['answer'];
+        dump($answer);
+
+        // update the score
+        if ($request->input('question') == $game[$qno]['answer']) {
+            $score++;
+            $request->session()->put('score', $score);
+        }
+
+        // increment the question number
+        $qno++;
+        // check to see if the game is over
+        if($qno >= count($game)) {
+            // game is complete
+            // switch to gameover view
+            //return view('trivia.gameover')->with([
+            //    'game' => $game,
+            //    'qno' => $qno,
+            //    'score' => $score,
+            //]);
+        }
+
+        // save the session data and go to the next question
+        $request->session()->put('qno', $qno);
+
         return view('trivia.game')->with([
-            'q_number' => $q_number,
             'game' => $game,
             'qno' => $qno,
+            'score' => $score,
         ]);
     }
 }

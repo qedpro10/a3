@@ -13,19 +13,19 @@
         <h2>{{ $game[$qno]['question'] }}</h2>
         <ul>
             <li>
-                <label><input type='radio' name='question' value='ans_a'> {{$game[$qno]['a']}}</label>
+                <label><input type='radio' name='question' value='a'> {{$game[$qno]['a']}}</label>
             </li>
             <li>
-                <label><input type='radio' name='question' value='ans_b'> {{$game[$qno]['b']}}</label>
+                <label><input type='radio' name='question' value='b'> {{$game[$qno]['b']}}</label>
             </li>
             <li>
-                <label><input type='radio' name='question' value='ans_c'> {{$game[$qno]['c']}}</label>
+                <label><input type='radio' name='question' value='c'> {{$game[$qno]['c']}}</label>
             </li>
             <li>
-                <label><input type='radio' name='question' value='ans_d'> {{$game[$qno]['d']}}</label>
+                <label><input type='radio' name='question' value='d'> {{$game[$qno]['d']}}</label>
             </li>
             <li>
-                <label><input type='radio' name='question' value='ans_e'> {{$game[$qno]['e']}}</label>
+                <label><input type='radio' name='question' value='e'> {{$game[$qno]['e']}}</label>
             </li>
         </ul>
 
