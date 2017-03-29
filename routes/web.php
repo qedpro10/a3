@@ -15,13 +15,19 @@
 //Route::any('/', function() {
 //    return redirect()->action('TriviaController@getGame');
 //});
+Route::get('/', function () {
+    return redirect('/play');
+});
 
-Route::any('/', 'TriviaController@index');
+Route::any('/play', 'TriviaController@index');
+//Route::any('/play', 'TriviaController@index');
 
 Route::post('/play', 'TriviaController@postGame');
 
 //Route::get('/game/', 'TriviaController@processQuestion');
 Route::post('/game', 'TriviaController@processQuestion');
+
+Route::post('/score', 'TriviaController@processScore');
 
 Route::any('/practice/{n?}', 'PracticeController@index');
 

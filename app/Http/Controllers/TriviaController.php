@@ -25,9 +25,9 @@ class TriviaController extends Controller
     */
     public function postGame(Request $request) {
 
-        //$this->validate($request, [
-        //    'category' => 'required',
-        //]);
+        $this->validate($request, [
+            'category' => 'required',
+        ]);
 
 
         # Store the game category in a variable for easy access
@@ -83,19 +83,20 @@ class TriviaController extends Controller
             $request->session()->put('score', $score);
         }
 
-        // increment the question number
-        $qno++;
+
         // check to see if the game is over
-        if($qno >= count($game)) {
+        if($qno == count($game)) {
             // game is complete
             // switch to gameover view
-            //return view('trivia.gameover')->with([
-            //    'game' => $game,
-            //    'qno' => $qno,
-            //    'score' => $score,
-            //]);
+            return view('trivia.score')->with([
+                'game' => $game,
+                'qno' => $qno,
+                'score' => $score,
+            ]);
         }
 
+        // increment the question number
+        $qno++;
         // save the session data and go to the next question
         $request->session()->put('qno', $qno);
 
@@ -104,5 +105,17 @@ class TriviaController extends Controller
             'qno' => $qno,
             'score' => $score,
         ]);
+    }
+
+    /**
+    * POST
+    * /score
+    * Return to the play page
+    */
+    public function processScore(Request $request) {
+
+        $request->session()->flush();
+
+        return view('trivia.play');
     }
 }

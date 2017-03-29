@@ -1,0 +1,33 @@
+
+.mainlogo {
+    height:150px;
+}
+.banner {
+    width: 30%;
+    display:inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1%;
+}
+
+.btn-calc {
+    margin: 0px 0 20px 0;
+    text-align: center;
+}
+
+.gamestyle {
+    list-style: none;
+}
+
+.foot {
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 50px;
+}
+
+.container {
+    height: 400px;
+    text-align: center;
+    align-content: center;
+}

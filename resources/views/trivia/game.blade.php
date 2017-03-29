@@ -10,8 +10,8 @@
 
     <form method='POST' action='/game'>
         {{ csrf_field() }}
-        <h2>{{ $game[$qno]['question'] }}</h2>
-        <ul>
+        <h3>{{ $game[$qno]['question'] }}</h3>
+        <ul class="gamestyle">
             <li>
                 <label><input type='radio' name='question' value='a'> {{$game[$qno]['a']}}</label>
             </li>
@@ -29,7 +29,9 @@
             </li>
         </ul>
 
-        <input type='submit' value='Submit'>
+        <div class="btn-calc">
+            <input type='submit' class="btn btn-info btn-md " value='Submit'>
+        </div>
     </form>
 
 
