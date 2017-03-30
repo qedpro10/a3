@@ -55,8 +55,15 @@ class TriviaController extends Controller
         $request->session()->put('qno', $qno);
         $request->session()->put('score', $score);
 
+        // get the question
+        $question = $game[$qno];
+
+        // get the start time
+        $startTime = time();
+        $request->session()->put('startTime', $startTime);
+
         return view('trivia.game')->with([
-            'game' => $game,
+            'question' => $question,
             'qno' => $qno,
             'score' => $score,
         ]);
@@ -86,10 +93,16 @@ class TriviaController extends Controller
 
         // check to see if the game is over
         if($qno == count($game)) {
+
+            // get the end time
+            $startTime = $request->session()->get('startTime');
+            $endTime = time();
+            dump($startTime);
+            dump($endTime);
+
             // game is complete
             // switch to gameover view
             return view('trivia.score')->with([
-                'game' => $game,
                 'qno' => $qno,
                 'score' => $score,
             ]);
@@ -99,9 +112,11 @@ class TriviaController extends Controller
         $qno++;
         // save the session data and go to the next question
         $request->session()->put('qno', $qno);
+        //$answers = $game[$qno]['a'] + $game[$qno]['b'] $game[$qno]['c'] + $game[$qno]['d']
+        $question = $game[$qno];
 
         return view('trivia.game')->with([
-            'game' => $game,
+            'question' => $question,
             'qno' => $qno,
             'score' => $score,
         ]);

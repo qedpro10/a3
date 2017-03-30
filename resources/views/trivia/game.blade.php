@@ -10,22 +10,22 @@
 
     <form method='POST' action='/game'>
         {{ csrf_field() }}
-        <h3>{{ $game[$qno]['question'] }}</h3>
+        <h3>{{ $question['question'] }}</h3>
         <ul class="gamestyle">
             <li>
-                <label><input type='radio' name='question' value='a'> {{$game[$qno]['a']}}</label>
+                <label><input type='radio' name='question' value='a'> {{$question['a']}}</label>
             </li>
             <li>
-                <label><input type='radio' name='question' value='b'> {{$game[$qno]['b']}}</label>
+                <label><input type='radio' name='question' value='b'> {{$question['b']}}</label>
             </li>
             <li>
-                <label><input type='radio' name='question' value='c'> {{$game[$qno]['c']}}</label>
+                <label><input type='radio' name='question' value='c'> {{$question['c']}}</label>
             </li>
             <li>
-                <label><input type='radio' name='question' value='d'> {{$game[$qno]['d']}}</label>
+                <label><input type='radio' name='question' value='d'> {{$question['d']}}</label>
             </li>
             <li>
-                <label><input type='radio' name='question' value='e'> {{$game[$qno]['e']}}</label>
+                <label><input type='radio' name='question' value='e'> {{$question['e']}}</label>
             </li>
         </ul>
 
@@ -33,8 +33,5 @@
             <input type='submit' class="btn btn-info btn-md " value='Submit'>
         </div>
     </form>
-
-
-
 
 @endsection
