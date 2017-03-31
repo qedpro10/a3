@@ -1,0 +1,29 @@
+{
+    "1": {
+        "question" : "Who was the first president of the United States?",
+        "answer" : "b",
+        "a" : "Benjamin Franklin",
+        "b" : "George Washington",
+        "c" : "Thomas Jefferson",
+        "d" : "Abraham Lincoln",
+        "e" : "None of the above"
+    },
+    "2": {
+        "question" : "What element does the symbol  K represent?",
+        "answer" : "d",
+        "a" : "Gold",
+        "b" : "Kryptonite",
+        "c" : "Chlorine",
+        "d" : "Potassium",
+        "e" : "None of the above"
+    },
+    "3": {
+        "question" : "What separates the Federation from Romulon space?",
+        "answer" : "c",
+        "a" : "A energy field",
+        "b" : "Sector D",
+        "c" : "The Neutral Zone",
+        "d" : "Klingon Empire",
+        "e" : "None of the above"
+    }
+}

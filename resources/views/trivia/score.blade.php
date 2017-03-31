@@ -11,7 +11,7 @@
     <p>{{$score}}/{{$qno}}</p>
 
     <form method='GET' action='/play'>
-        {{ csrf_field() }}
+
 
 
         <div class="btn-calc">

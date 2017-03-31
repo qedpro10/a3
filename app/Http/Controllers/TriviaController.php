@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+
 class TriviaController extends Controller
 {
 
@@ -25,29 +26,23 @@ class TriviaController extends Controller
     */
     public function postGame(Request $request) {
 
+        # Only play game if a category has been selected
         $this->validate($request, [
             'category' => 'required',
         ]);
 
 
         # Store the game category in a variable for easy access
-        # The second parameter (null) is what the variable
-        # will be set to *if* category is not in the request.
-        //$game = null;
-        //$q_number = 1000;
-        $category = $request->input('category', null);
+        $category = $request->input('category');
         $elite = $request->has('elite');
         $gametype = $request->input('gametype', null);
-        # Only play game if a category has been selected
 
-        $questions = file_get_contents(database_path().'/questions.json');
 
-        # Decode the book JSON data into an array
-        # Nothing fancy here; just a built in PHP method
-        $game = json_decode($questions, true);
-        // initialize the # of correct answers
+        $triviaGame = new \App\Game\Game($category, 10);
+        $game = $trivaGame->getGame();
+
+        // initialize the game parameters score and question number (qno)
         $score = 0;
-        // set the question number to the first question
         $qno = 1;
 
         // save this data in the session
