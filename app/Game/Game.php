@@ -1,4 +1,4 @@
-<? php
+<?php
 
 
 class Game {
@@ -39,6 +39,6 @@ class Game {
     }
 
     public function getGame() {
-        return this->$game;
+        return $this->$game;
     }
 }
