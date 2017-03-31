@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Game;
 
 
 class TriviaController extends Controller
@@ -38,7 +39,7 @@ class TriviaController extends Controller
         $gametype = $request->input('gametype', null);
 
 
-        $triviaGame = new \App\Game\Game($category, 10);
+        $triviaGame = new Game($category, 10);
         $game = $trivaGame->getGame();
 
         // initialize the game parameters score and question number (qno)
