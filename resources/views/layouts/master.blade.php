@@ -2,10 +2,10 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <meta name="description" content="trivia game">
+    <meta name="description" content="Star Trek Trivia Game">
     <meta name="author" content="Jen Smith">
     <title>
-        @yield('title', 'Trivia Master')
+        @yield('title', 'Star Trekivia')
     </title>
 
     <link rel="icon" type="images/png" href="images/favicon.ico">
@@ -19,24 +19,26 @@
 <body>
 
     <header class="mainlogo">
-        <div class="banner">
-            <h1>Trivia</h1>
-        </div>
-        <div class="banner">
-            <img src='images/brain.png' style='width:100px' alt='Triviae Meretrix Logo'>
-        </div>
-        <div class="banner">
-            <h1>Master</h1>
+        <div id="top">
+            <div class="banner">
+                <img src=@yield('picture','images/st_tng.jpg') style='width:250px' alt="ST_Logo">
+            </div>
+            <div class="banner">
+                <h1>Star Trekivia</h1>
+            </div>
         </div>
     </header>
 
     <div class="container">
         <div class="row">
-
-                <section class="quiz">
+                <section class="mainpage">
                     @yield('content')
                 </section>
-            
+
+                <section>
+                    @yield('quiz')
+                </section>
+
         </div>
     </div>
 

@@ -1,0 +1,29 @@
+{
+    "1": {
+        "question" : "What currency is used in the Federation",
+        "answer" : "d",
+        "a" : "Gold",
+        "b" : "Platinum",
+        "c" : "Federation Credits",
+        "d" : "Latinum",
+        "e" : "None of the above"
+    },
+    "2": {
+        "question" : "Where is DS9 located?",
+        "answer" : "b",
+        "a" : "The edge of sector D",
+        "b" : "Near a stable worm hole",
+        "c" : "Orbiting Earth",
+        "d" : "At the center of the Milky Way",
+        "e" : "None of the above"
+    },
+    "3": {
+        "question" : "What separates the Federation from Romulon space?",
+        "answer" : "c",
+        "a" : "A energy field",
+        "b" : "Sector D",
+        "c" : "The Neutral Zone",
+        "d" : "Klingon Empire",
+        "e" : "None of the above"
+    }
+}

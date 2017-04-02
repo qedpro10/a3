@@ -1,0 +1,29 @@
+{
+    "1": {
+        "question" : "Who was the captain of Voyager",
+        "answer" : "b",
+        "a" : "Spock",
+        "b" : "Katherine Janeway",
+        "c" : "James Kirk",
+        "d" : "Angelina Jolie",
+        "e" : "None of the above"
+    },
+    "2": {
+        "question" : "What happened to Voyager such that they couldn't go home",
+        "answer" : "d",
+        "a" : "Trapped behind energy field",
+        "b" : "Destroyed by the Borg",
+        "c" : "Went thru a worm hole to the Delta quadrant",
+        "d" : "Stuck in a black hole",
+        "e" : "None of the above"
+    },
+    "3": {
+        "question" : "What separates the Federation from Romulon space?",
+        "answer" : "c",
+        "a" : "A energy field",
+        "b" : "Sector D",
+        "c" : "The Neutral Zone",
+        "d" : "Klingon Empire",
+        "e" : "None of the above"
+    }
+}

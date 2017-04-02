@@ -1,20 +1,20 @@
 {
     "1": {
-        "question" : "Who was the first president of the United States?",
+        "question" : "Who was the creator of Star Trek?",
         "answer" : "b",
-        "a" : "Benjamin Franklin",
-        "b" : "George Washington",
-        "c" : "Thomas Jefferson",
-        "d" : "Abraham Lincoln",
+        "a" : "George Lucas",
+        "b" : "Gene Roddenbery",
+        "c" : "Leonard Nimoy",
+        "d" : "J. J. Abrams",
         "e" : "None of the above"
     },
     "2": {
-        "question" : "What element does the symbol  K represent?",
+        "question" : "What color shirts did the communications officers wear",
         "answer" : "d",
         "a" : "Gold",
-        "b" : "Kryptonite",
-        "c" : "Chlorine",
-        "d" : "Potassium",
+        "b" : "Blue",
+        "c" : "Green",
+        "d" : "Red",
         "e" : "None of the above"
     },
     "3": {

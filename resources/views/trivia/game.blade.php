@@ -5,13 +5,17 @@
     Trivia Game
 @endsection
 
-@section('content')
+@section('picture')
+    images/st_tng.jpg
+@endsection
+
+@section('quiz')
     <h1>Question {{ $qno }}</h1>
 
     <form method='POST' action='/game'>
         {{ csrf_field() }}
         <h3>{{ $question['question'] }}</h3>
-        <ul class="gamestyle">
+        <ul>
             <li>
                 <label><input type='radio' name='question' value='a'> {{$question['a']}}</label>
             </li>
@@ -29,9 +33,8 @@
             </li>
         </ul>
 
-        <div class="btn-calc">
             <input type='submit' class="btn btn-info btn-md " value='Submit'>
-        </div>
-    </form>
 
+    </form>
+    
 @endsection

@@ -1,20 +1,20 @@
 {
     "1": {
-        "question" : "Who was the first president of the United States?",
+        "question" : "Who was the captain of the Enterprise?",
         "answer" : "b",
-        "a" : "Benjamin Franklin",
-        "b" : "George Washington",
-        "c" : "Thomas Jefferson",
-        "d" : "Abraham Lincoln",
+        "a" : "Wllliam Riker",
+        "b" : "Jean Luc Picard",
+        "c" : "James T. Kirk",
+        "d" : "Spock",
         "e" : "None of the above"
     },
     "2": {
-        "question" : "What element does the symbol  K represent?",
+        "question" : "What was different about the Enterprise C?",
         "answer" : "d",
-        "a" : "Gold",
-        "b" : "Kryptonite",
-        "c" : "Chlorine",
-        "d" : "Potassium",
+        "a" : "It could go warp 10",
+        "b" : "It carried no weapons",
+        "c" : "Impervious to Klingon weapons",
+        "d" : "The saucer section could separate",
         "e" : "None of the above"
     },
     "3": {

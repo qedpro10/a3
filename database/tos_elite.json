@@ -1,0 +1,29 @@
+{
+    "1": {
+        "question" : "What color shirts did the communications officers wear",
+        "answer" : "d",
+        "a" : "Gold",
+        "b" : "Blue",
+        "c" : "Green",
+        "d" : "Red",
+        "e" : "None of the above"
+    },
+    "2": {
+        "question" : "What separates the Federation from Romulon space?",
+        "answer" : "c",
+        "a" : "A energy field",
+        "b" : "Sector D",
+        "c" : "The Neutral Zone",
+        "d" : "Klingon Empire",
+        "e" : "None of the above"
+    },
+    "3": {
+        "question" : "Who was the creator of Star Trek?",
+        "answer" : "b",
+        "a" : "George Lucas",
+        "b" : "Gene Roddenbery",
+        "c" : "Leonard Nimoy",
+        "d" : "J. J. Abrams",
+        "e" : "None of the above"
+    }
+}

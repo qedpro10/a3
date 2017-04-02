@@ -1,20 +1,20 @@
 {
     "1": {
-        "question" : "Who was the first president of the United States?",
+        "question" : "Who was the Captain of the Enterprise?",
         "answer" : "b",
-        "a" : "Benjamin Franklin",
-        "b" : "George Washington",
-        "c" : "Thomas Jefferson",
-        "d" : "Abraham Lincoln",
+        "a" : "James T. Kirk",
+        "b" : "Johnathon Archer",
+        "c" : "Scott Bakula",
+        "d" : "Jean Luc Picard",
         "e" : "None of the above"
     },
     "2": {
-        "question" : "What element does the symbol  K represent?",
+        "question" : "What the max speed of the Enterprise?",
         "answer" : "d",
-        "a" : "Gold",
-        "b" : "Kryptonite",
-        "c" : "Chlorine",
-        "d" : "Potassium",
+        "a" : "Impulse power only",
+        "b" : "Warp 1",
+        "c" : "Warp 10",
+        "d" : "Warp 5",
         "e" : "None of the above"
     },
     "3": {

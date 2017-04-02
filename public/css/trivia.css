@@ -1,22 +1,28 @@
 
 .mainlogo {
-    height:150px;
+
 }
-.banner {
-    width: 30%;
+
+#top {
+  text-align:center;
+}
+
+.banner  {
     display:inline-block;
-    box-sizing: border-box;
-    text-align: center;
+    margin: 0 auto;
     vertical-align: middle;
-    padding: 1%;
 }
 
 .btn-calc {
     margin: 0px 0 20px 0;
-    text-align: center;
 }
 
-.gamestyle {
+#gamestyle {
+    display:inline-block;
+    margin:0 auto"
+}
+
+li {
     list-style: none;
 }
 
@@ -27,7 +33,14 @@
 }
 
 .container {
-    height: 400px;
+    height: 300px;
+}
+
+.mainpage {
     text-align: center;
-    align-content: center;
+}
+
+.quiz {
+    margin-left: auto;
+    margin-right: auto;
 }
