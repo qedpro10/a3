@@ -2,11 +2,11 @@
 @extends('layouts.master')
 
 @section('title')
-    Trivia Game
+    Star Trekivia
 @endsection
 
 @section('picture')
-    images/st_tng.jpg
+    images/{{$logo}}
 @endsection
 
 @section('quiz')
@@ -36,5 +36,5 @@
             <input type='submit' class="btn btn-info btn-md " value='Submit'>
 
     </form>
-    
+
 @endsection

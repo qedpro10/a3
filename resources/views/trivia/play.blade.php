@@ -2,7 +2,7 @@
 @extends ('layouts.master')
 
 @section('title')
-    Play
+    Star Trekivia
 @endsection
 
 @section('picture')
@@ -26,14 +26,13 @@
         <br><br>
         <fieldset class='radios'>
             <label>Game Type: </label>
-            <label><input type='radio' name='gametype' value='leisure' {{ ($gametype == 'leisure') ? 'CHECKED' : 'CHECKED' }}> Impulse</label>
-            <label><input type='radio' name='gametype' value='speed' {{ ($gametype == 'speed') ? 'CHECKED' : '' }}> Warp Speed</label>
+            <label><input type='radio' name='gametype' value='impulse' {{ ($gametype == 'impulse') ? 'CHECKED' : 'CHECKED' }}> Impulse</label>
+            <label><input type='radio' name='gametype' value='warp' {{ ($gametype == 'warp') ? 'CHECKED' : '' }}> Warp Speed</label>
         </fieldset>
         <br>
         <p>
-            <label>Trekkie: </label>
+            <label>Don't Insult Me.  I'm a Trekkie: </label>
             <input type='checkbox' name="elite" {{ ($elite) ? 'CHECKED' : '' }}>
-            <label>()</label>
         </p>
 
         <div class="btn-calc">
