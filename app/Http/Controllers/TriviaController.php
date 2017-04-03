@@ -151,12 +151,15 @@ class TriviaController extends Controller
                 $displayLogo = $request->session()->get('logo', 'default');
 
                 // shuffle the questions
-                //$game = $stgame->shuffle();
+                $game = $stgame->shuffle($game);
+                dump("new game");
+                dump($game);
                 // reset the game
                 $qno = 1;
                 $score = 0;
                 $request->session()->put('qno', $qno);
                 $request->session()->put('score', $score);
+                $request->session()->put('game', $game);
                 $question = $game[$qno];
 
                 // start the game over

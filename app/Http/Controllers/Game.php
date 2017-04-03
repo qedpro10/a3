@@ -62,6 +62,25 @@ class Game {
 
     }
 
+    public function shuffle() {
+        $shuffleKeys = array_keys($this->game);
+        //dump($shuffleKeys);
+        shuffle($shuffleKeys);
+        //dump($shuffleKeys);
+        $newArray = array();
+        foreach($shuffleKeys as $key) {
+            $newArray[$key] = $this->game[$key];
+            //dump($newArray);
+        }
+        dump($newArray);
+        return $newArray;
+    }
+
+    public function getQuestion() {
+        $num = rand(1, count($game));
+        return $this->game[$num];
+    }
+
     public function getGame() {
         // shuffle the questions
         return $this->game;
