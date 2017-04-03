@@ -41,7 +41,7 @@ class Game {
             break;
         case 'enterprise':
             $this->gameFile = '/enterprise'.$elite.'.json';
-            $this->logo = 'enterprise.png';
+            $this->logo = 'enterprise.jpg';
             break;
         default:
             $this->gameFile = '/tos'.$elite.'.json';
@@ -62,22 +62,8 @@ class Game {
 
     }
 
-    public function shuffle() {
-        $shuffleKeys = array_keys($this->game);
-        //dump($shuffleKeys);
-        shuffle($shuffleKeys);
-        //dump($shuffleKeys);
-        $newArray = array();
-        foreach($shuffleKeys as $key) {
-            $newArray[$key] = $this->game[$key];
-            //dump($newArray);
-        }
-        dump($newArray);
-        return $newArray;
-    }
-
     public function getQuestion() {
-        $num = rand(1, count($game));
+        $num = rand(1, count($this->game));
         return $this->game[$num];
     }
 

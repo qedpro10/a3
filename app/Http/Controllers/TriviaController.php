@@ -39,7 +39,7 @@ class TriviaController extends Controller
         $gametype = $request->input('gametype', null);
 
 
-        $triviaGame = new Game($category, $elite, 10);
+        $triviaGame = new Game($category, $elite);
         $game = $triviaGame->getGame();
 
         $displayLogo = $triviaGame->getLogo();
@@ -48,7 +48,6 @@ class TriviaController extends Controller
         $qno = 1;
 
         // save this data in the session
-        $request->session()->put('game', $game);
         $request->session()->put('stgame', $triviaGame);
         $request->session()->put('qno', $qno);
         $request->session()->put('score', $score);
@@ -58,7 +57,8 @@ class TriviaController extends Controller
         $request->session()->put('category', $category);
 
         // get the question
-        $question = $game[$qno];
+        $question = $triviaGame->getQuestion();
+        $request->session()->put('question', $question);
 
         // get the start time
         $startTime = time();
@@ -79,23 +79,24 @@ class TriviaController extends Controller
     */
     public function processQuestion(Request $request) {
         // get the game session data
-        $game = $request->session()->get('game', 'default');
+        $stgame = $request->session()->get('stgame', 'default');
+        $question = $request->session()->get('question', 'default');
         $qno = $request->session()->get('qno', 'default');
         $score = $request->session()->get('score', 'default');
         $displayLogo = $request->session()->get('logo', 'default');
 
 
-        $answer = $game[$qno]['answer'];
+        $answer = $question['answer'];
 
         // update the score
-        if ($request->input('question') == $game[$qno]['answer']) {
+        if ($request->input('question') == $question['answer']) {
             $score++;
             $request->session()->put('score', $score);
         }
 
 
         // check to see if the game is over
-        if($qno == count($game)) {
+        if($qno == 2) {
             $gametype = $request->session()->get('gametype');
             if($gametype == 'warp') {
                 // get the end time
@@ -123,8 +124,10 @@ class TriviaController extends Controller
         $qno++;
         // save the session data and go to the next question
         $request->session()->put('qno', $qno);
-        //$answers = $game[$qno]['a'] + $game[$qno]['b'] $game[$qno]['c'] + $game[$qno]['d']
-        $question = $game[$qno];
+
+        // get the next question and store it
+        $question = $stgame->getQuestion();
+        $request->session()->put('question', $question);
 
         return view('trivia.game')->with([
             'question' => $question,
@@ -147,20 +150,17 @@ class TriviaController extends Controller
 
             case 'Play Again?':
                 $stgame = $request->session()->get('stgame', 'default');
-                $game = $request->session()->get('game', 'default');
                 $displayLogo = $request->session()->get('logo', 'default');
 
-                // shuffle the questions
-                $game = $stgame->shuffle($game);
-                dump("new game");
-                dump($game);
                 // reset the game
                 $qno = 1;
                 $score = 0;
                 $request->session()->put('qno', $qno);
                 $request->session()->put('score', $score);
-                $request->session()->put('game', $game);
-                $question = $game[$qno];
+
+                // get the next question
+                $question = $stgame->getQuestion();
+                $request->session()->put('question', $question);
 
                 // start the game over
                 return view('trivia.game')->with([

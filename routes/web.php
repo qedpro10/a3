@@ -27,7 +27,7 @@ Route::post('/play', 'TriviaController@postGame');
 //Route::get('/game/', 'TriviaController@processQuestion');
 Route::post('/game', 'TriviaController@processQuestion');
 
-Route::get('/score', 'TriviaController@processScore');
+Route::post('/score', 'TriviaController@processScore');
 
 
 Route::any('/practice/{n?}', 'PracticeController@index');

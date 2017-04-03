@@ -16,7 +16,7 @@
         <h1>Time: {{$time}} seconds</h1>
     @endif
 
-    <form method='GET' action='/score'>
+    <form method='POST' action='/score'>
         {{ csrf_field() }}
         <div class="btn-calc">
             <input type='submit' name="play" class="btn btn-info btn-md " value='Play Again?'>
