@@ -43,7 +43,7 @@
     </div>
 
     <footer class="foot">
-        <p>Jen Smith &copy; {{ date('Y') }}</p>
+        <p>Jen Tiberius Smith &copy; {{ date('Y') }}</p>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

@@ -16,10 +16,11 @@
         <h1>Time: {{$time}} seconds</h1>
     @endif
 
-    <form method='GET' action='/play'>
-
+    <form method='GET' action='/score'>
+        {{ csrf_field() }}
         <div class="btn-calc">
-            <input type='submit' class="btn btn-info btn-md " value='Play Again?'>
+            <input type='submit' name="play" class="btn btn-info btn-md " value='Play Again?'>
+            <input type='submit' name="play" class="btn btn-info btn-md " value='Quit'>
         </div>
     </form>
 

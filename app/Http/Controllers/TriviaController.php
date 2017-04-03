@@ -37,7 +37,7 @@ class TriviaController extends Controller
         $category = $request->input('category');
         $elite = $request->has('elite');
         $gametype = $request->input('gametype', null);
-        dump($gametype);
+
 
         $triviaGame = new Game($category, $elite, 10);
         $game = $triviaGame->getGame();
@@ -49,10 +49,13 @@ class TriviaController extends Controller
 
         // save this data in the session
         $request->session()->put('game', $game);
+        $request->session()->put('stgame', $triviaGame);
         $request->session()->put('qno', $qno);
         $request->session()->put('score', $score);
         $request->session()->put('logo', $displayLogo);
         $request->session()->put('gametype', $gametype);
+        $request->session()->put('elite', $elite);
+        $request->session()->put('category', $category);
 
         // get the question
         $question = $game[$qno];
@@ -137,9 +140,46 @@ class TriviaController extends Controller
     * Return to the play page
     */
     public function processScore(Request $request) {
+        // the end of the game gives the user 2 choices
+        // play another round of the same game
+        // or quit and go back to the main menu
+        switch($request->input('play')) {
 
-        $request->session()->flush();
+            case 'Play Again?':
+                $stgame = $request->session()->get('stgame', 'default');
+                $game = $request->session()->get('game', 'default');
+                $displayLogo = $request->session()->get('logo', 'default');
 
-        return view('trivia.play');
+                // shuffle the questions
+                //$game = $stgame->shuffle();
+                // reset the game
+                $qno = 1;
+                $score = 0;
+                $request->session()->put('qno', $qno);
+                $request->session()->put('score', $score);
+                $question = $game[$qno];
+
+                // start the game over
+                return view('trivia.game')->with([
+                    'question' => $question,
+                    'qno' => $qno,
+                    'score' => $score,
+                    'logo' => $displayLogo,
+                ]);
+            break;
+
+            case 'Quit':
+            default:
+                $category = $request->session()->get('category', 'default');
+                $elite = $request->session()->get('elite', 'default');
+                $gametype = $request->session()->get('gametype', 'default');
+                $request->session()->flush();
+                return view('trivia.play')->with([
+                    'category' => $category,
+                    'elite' => $elite,
+                    'gametype' => $gametype,
+                ]);
+            break;
+        }
     }
 }
