@@ -22,17 +22,21 @@
             <option value="voyager" {{ ($category == 'voyager') ? 'SELECTED' : '' }}>Voyager</option>
             <option value="enterprise" {{ ($category == 'enterprise') ? 'SELECTED' : '' }}>Enterprise</option>
         </select>
-        <label>*Required</label>
+        @if($errors->has('category'))
+            <label id="error">*Required</label>
+        @else
+            <label>*Required</label>
+        @endif
         <br><br>
         <fieldset class='radios'>
             <label>Game Type: </label>
-            <label><input type='radio' name='gametype' value='impulse' {{ ($gametype == 'impulse') ? 'CHECKED' : 'CHECKED' }}> Impulse</label>
-            <label><input type='radio' name='gametype' value='warp' {{ ($gametype == 'warp') ? 'CHECKED' : '' }}> Warp Speed</label>
+            <label><input type='radio' name='gametype' value='impulse' checked="checked" @if(old('gametype') == 'impulse') CHECKED @endif>Impulse</label>
+            <label><input type='radio' name='gametype' value='warp' @if(old('gametype') == 'warp') CHECKED @endif>Warp Speed</label>
         </fieldset>
         <br>
         <p>
-            <label>Don't Insult Me.  I'm a Trekkie: </label>
-            <input type='checkbox' name="elite" {{ ($elite) ? 'CHECKED' : '' }}>
+            <label>I'm a Trekkie: </label>
+            <input type='checkbox' name='elite' @if(old('elite')) CHECKED @endif>
         </p>
 
         <div class="btn-calc">
@@ -40,11 +44,4 @@
         </div>
     </form>
 
-    @if(count($errors) > 0)
-    <ul>
-        @foreach ($errors->all() as $error)
-            <li>{{ $error }}</li>
-        @endforeach
-    </ul>
-    @endif
 @endsection

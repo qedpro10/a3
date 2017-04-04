@@ -215,8 +215,10 @@ class TriviaController extends Controller
                 $category = $request->session()->get('category', 'default');
                 $elite = $request->session()->get('elite', 'default');
                 $gametype = $request->session()->get('gametype', 'default');
+
                 $request->session()->flush();
-                return view('trivia.play')->with([
+                $request->session()->save();
+                return redirect('/play')->with([
                     'category' => $category,
                     'elite' => $elite,
                     'gametype' => $gametype,

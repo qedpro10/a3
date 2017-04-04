@@ -10,7 +10,7 @@
 @endsection
 
 @section('quiz')
-    <h1>Question {{ $qno }}</h1>
+    <h2>Question {{ $qno }}</h2>
 
     <form method='POST' action='/game/checkAnswer'>
         {{ csrf_field() }}
