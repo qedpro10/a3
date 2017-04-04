@@ -1,6 +1,6 @@
 {
     "1": {
-        "question" : "Who was the captain of the Enterprise?",
+        "question" : "Who was the captain of the Enterprise D?",
         "answer" : "b",
         "a" : "Wllliam Riker",
         "b" : "Jean Luc Picard",
@@ -9,7 +9,7 @@
         "e" : "None of the above"
     },
     "2": {
-        "question" : "What was different about the Enterprise C?",
+        "question" : "What was different about the Enterprise D?",
         "answer" : "d",
         "a" : "It could go warp 10",
         "b" : "It carried no weapons",
@@ -25,5 +25,77 @@
         "c" : "The Neutral Zone",
         "d" : "Klingon Empire",
         "e" : "None of the above"
+    },
+    "4": {
+        "question" : "What instrument does Commander William Riker play?",
+        "answer" : "b",
+        "a" : "Saxophone",
+        "b" : "Trombone",
+        "c" : "Wooden Flute",
+        "d" : "Guitar",
+        "e" : "Banjo"
+    },
+    "5": {
+        "question" : "What instrument does the Captain learn to play, which ends up being decades of experience, during the course of the show?",
+        "answer" : "c",
+        "a" : "Clarinet",
+        "b" : "Piano",
+        "c" : "Wooden Flute",
+        "d" : "Violin",
+        "e" : "Saxaphone"
+    },
+    "6": {
+        "question" : "In the first episode, what does Captain Picard ask Commander Riker to help him with?",
+        "answer" : "b",
+        "a" : "Monitoring the mood of the crew",
+        "b" : "His image with children",
+        "c" : "Solving a murder mystery",
+        "d" : "Help him learn the names of the crew",
+        "e" : "Understanding how the engines work"
+    },
+    "7": {
+        "question" : "When Patrick Stewart asked Gene Roddenberry to give him more information on the character of Captain Jean-Luc Picard, Roddenberry sent him what book(s)?",
+        "answer" : "c",
+        "a" : "The Pirate Captain by Kerry Lynee",
+        "b" : "The Story of Robin Hood and his Merrie Men by Lawrence Edward Watkin",
+        "c" : "The Time Machine by H.G. Wells",
+        "d" : "Horatio Hornblower by C.S. Forester",
+        "e" : "Moby Dick by Herman Melville"
+    },
+    "8": {
+        "question" : "What is the name of Dr. Beverly Crusher's son?",
+        "answer" : "e",
+        "a" : "William Crusher",
+        "b" : "Will Riker",
+        "c" : "Wil Wheaton",
+        "d" : "Will Crusher",
+        "e" : "Wesley Crusher"
+    },
+    "9": {
+        "question" : "The bridge that Scotty recreated on the holodeck of Enteprise NCC 1701 - D was from which ship?",
+        "answer" : "e",
+        "a" : "Excelsior Refit Class Enterprise NCC 1701 - B",
+        "b" : "Constituion Refit Class Enterprise NCC 1701 - Refit",
+        "c" : "Ambassador Class Enterprise NCC 1701 - C",
+        "d" : "Constitution Refit Class Enterprise NCC 1701 - A",
+        "e" : "Constituion Class Enterprise NCC 1701"
+    },
+    "10": {
+        "question" : "What is the song Data is trying to whistle in Season 1 on the holodeck?",
+        "answer" : "d",
+        "a" : "Row Row Row You Boat",
+        "b" : "Taps",
+        "c" : "Comin' Round the Mountain",
+        "d" : "Pop Goes the Weasel",
+        "e" : "Johnny Comes Marching Home"
+    },
+    "11": {
+        "question" : "What did Data name his cat?",
+        "answer" : "a",
+        "a" : "Spot",
+        "b" : "The General",
+        "c" : "Lal",
+        "d" : "Mittens",
+        "e" : "Fluffy"
     }
 }

@@ -33,7 +33,7 @@
             </li>
         </ul>
 
-            <input type='submit' class="btn btn-info btn-md " value='Submit'>
+            <input type='submit' class="btn btn-info btn-md btn-calc" value='Submit'>
 
     </form>
 

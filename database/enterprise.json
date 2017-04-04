@@ -1,15 +1,15 @@
 {
     "1": {
-        "question" : "Who was the Captain of the Enterprise?",
+        "question" : "Who was the Captain of the Enterprise NX-01?",
         "answer" : "b",
         "a" : "James T. Kirk",
-        "b" : "Johnathon Archer",
+        "b" : "Jonathan Archer",
         "c" : "Scott Bakula",
         "d" : "Jean Luc Picard",
         "e" : "None of the above"
     },
     "2": {
-        "question" : "What the max speed of the Enterprise?",
+        "question" : "What the max speed of the Enterprise NX-01?",
         "answer" : "d",
         "a" : "Impulse power only",
         "b" : "Warp 1",
@@ -18,12 +18,255 @@
         "e" : "None of the above"
     },
     "3": {
-        "question" : "What separates the Federation from Romulon space?",
+        "question" : "What race is Doctor Phlox?",
+        "answer" : "a",
+        "a" : "Denubulan",
+        "b" : "Andorian",
+        "c" : "Romulon",
+        "d" : "Human",
+        "e" : "None of the above"
+    },
+    "4": {
+        "question" : "What significant role did Captain Jonathan Archer's father play in history?",
+        "answer" : "d",
+        "a" : "Developed the transporter",
+        "b" : "Designed the holodeck",
+        "c" : "Developed the replicator",
+        "d" : "Lead developer of the warp five engine. ",
+        "e" : "None of the above"
+    },
+    "5": {
+        "question" : "'Star Trek: Enterprise' precedes 'Star Trek: The Original Series' in the timeline of the 'Star Trek' universe. Captain Kirk and his crew are first seen in the year 2265. What year does the Enterprise NX-01 with Captain Archer make its maiden voyage?",
+        "answer" : "b",
+        "a" : "2063",
+        "b" : "2151",
+        "c" : "2201",
+        "d" : "2185",
+        "e" : "None of the above"
+    },
+    "6": {
+        "question" : "In the series pilot episode, 'Broken Bow', Enterprise is sent to return a Klingon warrior to his home world. What was that Klingon's name?",
+        "answer" : "d",
+        "a" : "Khan",
+        "b" : "Worf",
+        "c" : "Kh'lyer",
+        "d" : "Klaang",
+        "e" : "None of the above"
+    },
+    "7": {
+        "question" : "The droppings of Dr. Phlox's Altarian marsupial have what highly-prized property?",
+        "answer" : "a",
+        "a" : "They contain regenerative enzymes ",
+        "b" : "They are encased in gold",
+        "c" : "They give off vapors that make humans high",
+        "d" : "They make your skin green",
+        "e" : "None of the above"
+    },
+    "8": {
+        "question" : "Although Jonathan was raised in San Francisco, where was he actually born?",
+        "answer" : "b",
+        "a" : "On a federation space station",
+        "b" : "New York",
+        "c" : "Iowa",
+        "d" : "LA",
+        "e" : "None of the above"
+    },
+    "9": {
+        "question" : "Who is second in command aboard Enterprise?",
         "answer" : "c",
-        "a" : "A energy field",
-        "b" : "Sector D",
-        "c" : "The Neutral Zone",
-        "d" : "Klingon Empire",
+        "a" : "T'Pring",
+        "b" : "T'Pal",
+        "c" : "T'Pol",
+        "d" : "T'Prise",
+        "e" : "None of the above"
+    },
+    "10": {
+        "question" : "What is Ensign Sato's first name. ",
+        "answer" : "b",
+        "a" : "Hiro",
+        "b" : "Hoshi",
+        "c" : "Hank",
+        "d" : "Henry",
+        "e" : "None of the above"
+    },
+    "11": {
+        "question" : "In 'Broken Bow' Captain Archer gets shot in the leg. What seemingly inappropriately-named creature does Dr. Phlox use to help heal the wound?",
+        "answer" : "d",
+        "a" : "Transporter",
+        "b" : "Vulcan mind meld",
+        "c" : "Andorian Leeches",
+        "d" : "Osmotic eel",
+        "e" : "None of the above"
+    },
+    "12": {
+        "question" : "What was the name of the officer who was selected ahead of Archer to pilot the NX-Alpha and by doing so, became the first person to travel at warp 2?",
+        "answer" : "b",
+        "a" : "Chris Pike",
+        "b" : "A. G. Robinson",
+        "c" : "Admiral John Jane",
+        "d" : "Zephram Cochrane",
+        "e" : "None of the above"
+    },
+    "13": {
+        "question" : "Surveying an uninhabited planet in the season two episode 'Minefield', the Enterprise got hit by a cloaked mine. Another attached itself to its hull. What race had put the mines around the planet?",
+        "answer" : "a",
+        "a" : "Romulans",
+        "b" : "Klingons",
+        "c" : "Xindi",
+        "d" : "Orions",
+        "e" : "None of the above"
+    },
+    "14": {
+        "question" : "In what year was Enterprise NX-01 launched?",
+        "answer" : "c",
+        "a" : "2063",
+        "b" : "2050",
+        "c" : "2151",
+        "d" : "2254",
+        "e" : "None of the above"
+    },
+    "15": {
+        "question" : "In 'Fight or Flight', what reason does Dr. Phlox give as to why he's interested in helping to keep Ensign Hoshi Sato's pet alive?",
+        "answer" : "c",
+        "a" : "He wants to cross-breed it with his Algean Rat",
+        "b" : "He wants to feed it to his bat",
+        "c" : "He wants to eat its eggs",
+        "d" : "It reminds him of a childhood pet",
+        "e" : "None of the above"
+    },
+    "16": {
+        "question" : " Who is the chief engineer?",
+        "answer" : "c",
+        "a" : "Spock",
+        "b" : "Scotty",
+        "c" : "Trip",
+        "d" : "Chakotay",
+        "e" : "None of the above"
+    },
+    "17": {
+        "question" : "What is Chief Engineer Trip's full name",
+        "answer" : "b",
+        "a" : "Montgomery Scott",
+        "b" : "Charles Tucker",
+        "c" : "Spock",
+        "d" : "James Tripper",
+        "e" : "None of the above"
+    },
+    "18": {
+        "question" : "In the episode 'The Expanse' an alien device attacks Earth, cutting a trench into the Earth's surface between which two places?",
+        "answer" : "a",
+        "a" : "Florida and Venezuela",
+        "b" : "Panama Canal",
+        "c" : "Canada and USA",
+        "d" : "Great Britian and Europe",
+        "e" : "None of the above"
+    },
+    "19": {
+        "question" : " What is the name of the Vulcan ambassador to Earth?",
+        "answer" : "b",
+        "a" : "Sarek",
+        "b" : "Soval",
+        "c" : "Sumak",
+        "d" : "Spock",
+        "e" : "None of the above"
+    },
+    "20": {
+        "question" : "When the crew of the Enterprise encountered a black hole that affected everyone adversely, causing various obsessive behaviours, Dr. Phlox almost performed a major surgery on a patient suffering only from a headache. Who was the patient?",
+        "answer" : "c",
+        "a" : "Trip",
+        "b" : "T'Pol",
+        "c" : "Ensign Mayweather",
+        "d" : "Yeoman Rand",
+        "e" : "None of the above"
+    },
+    "21": {
+        "question" : "Most of you know Jonathan Archer brought his dog, an adorable beagle, with him on the Enterprise. This lucky dog was named Porthos and he had a favorite snack but unfortunately this snack sometimes gave him gastrointestinal problems which has been the reason for at least one trip to sickbay. What was Porthos' favorite snack?",
+        "answer" : "c",
+        "a" : "bologna",
+        "b" : "cheese",
+        "c" : "bacos",
+        "d" : "milkbone dog biscuits",
+        "e" : "None of the above"
+    },
+    "22": {
+        "question" : "The start of the third season of saw the introduction of non-Starfleet personnel from Military Assault Command Operations (MACOs). Which character was the MACO commander?",
+        "answer" : "a",
+        "a" : "Major Payne",
+        "b" : "Major Hayes",
+        "c" : "Commander Riker",
+        "d" : "Captain Kanagroo",
+        "e" : "None of the above"
+    },
+    "23": {
+        "question" : "On Enterprise, who is the tactical officer?",
+        "answer" : "c",
+        "a" : "T'Pol",
+        "b" : "Trip",
+        "c" : "Reed",
+        "d" : "Rand",
+        "e" : "None of the above"
+    },
+    "24": {
+        "question" : "T'Pol's great grandmother visited what town on Earth in the 1950's?",
+        "answer" : "b",
+        "a" : "Boise",
+        "b" : "Carbon Creek",
+        "c" : "Spokane",
+        "d" : "Coral Gables",
+        "e" : "None of the above"
+    },
+    "25": {
+        "question" : "In 'Sleeping Dogs', T'Pol and Hoshi Sato enter the Klingon galley and find Gagh. What is Gagh?",
+        "answer" : "c",
+        "a" : "Lizard brains",
+        "b" : "Cochroach Stew",
+        "c" : "Sushi",
+        "d" : "Serpent Worms",
+        "e" : "None of the above"
+    },
+    "26": {
+        "question" : " In 'Chosen Realm', Captain Archer comes to the aid of a group of religious pilgrims. These people soon hijack the Enterprise to end a religious war. What was the name of the group of people?",
+        "answer" : "a",
+        "a" : "Triannons",
+        "b" : "Gothians",
+        "c" : "Mormans",
+        "d" : "Xindians",
+        "e" : "None of the above"
+    },
+    "27": {
+        "question" : " In 'Chosen Realm', Captain Archer comes to the aid of a group of religious pilgrims. These people soon hijack the Enterprise to end a religious war. What was the name of the group of people?",
+        "answer" : "a",
+        "a" : "Triannons",
+        "b" : "Gothians",
+        "c" : "Mormans",
+        "d" : "Xindians",
+        "e" : "None of the above"
+    },
+    "28": {
+        "question" : "In what month was the first Xindi attack on Earth?",
+        "answer" : "b",
+        "a" : "December",
+        "b" : "March",
+        "c" : "April",
+        "d" : "July",
+        "e" : "None of the above"
+    },
+    "29": {
+        "question" : "Which species of Xindi was extinct in the show?",
+        "answer" : "a",
+        "a" : "Avians",
+        "b" : "Insectoids",
+        "c" : "Aquatics",
+        "d" : "Primates",
+        "e" : "Arboreals"
+    },
+    "30": {
+        "question" : "How many sentient beings make up the Xindi",
+        "answer" : "a",
+        "a" : "6",
+        "b" : "2",
+        "c" : "Hundreds",
+        "d" : "All creatures on Xindi are sentient",
         "e" : "None of the above"
     }
 }

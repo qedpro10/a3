@@ -9,12 +9,14 @@ class Game {
     private $game;
     private $category;
     private $logo;
+    private $numQuestions;
 
     /*
      * Constructor
      */
     public function __construct($category, $level, $numQuestions = 10) {
         $this->category = $category;
+        $this->numQuestions = $numQuestions;
 
         $elite = '';
         if ($level) {
@@ -60,17 +62,19 @@ class Game {
 
     }
 
+    // gets a random question from the question bank
     public function getQuestion() {
         $num = rand(1, count($this->game));
         return $this->game[$num];
     }
 
-    public function getGame() {
-        // shuffle the questions
-        return $this->game;
-    }
-
+    // returns the Star Trek logo image for the game selected
     public function getLogo() {
         return $this->logo;
+    }
+
+    // returns the number of questions to ask per game
+    public function getNumQuestions() {
+        return $this->numQuestions;
     }
 }

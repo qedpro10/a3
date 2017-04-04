@@ -18,12 +18,174 @@
         "e" : "None of the above"
     },
     "3": {
-        "question" : "What separates the Federation from Romulon space?",
+        "question" : "Which 'Star Trek: Deep Space Nine' character said 'Doctor, I do believe there's hope for you yet'?",
+        "answer" : "a",
+        "a" : "Garak",
+        "b" : "Kira Nerys",
+        "c" : "Julian Bashir",
+        "d" : "Odo",
+        "e" : "None of the above"
+    },
+    "3": {
+        "question" : "Which 'Star Trek: Deep Space Nine' character said 'Doctor, I do believe there's hope for you yet'?",
+        "answer" : "a",
+        "a" : "Garak",
+        "b" : "Kira Nerys",
+        "c" : "Julian Bashir",
+        "d" : "Odo",
+        "e" : "None of the above"
+    },
+    "4": {
+        "question" : "Who is the highest-ranking Starfleet officer aboard the station?",
+        "answer" : "d",
+        "a" : "Garak",
+        "b" : "Quark",
+        "c" : "Julian Bashir",
+        "d" : "Benjamin Sisko",
+        "e" : "None of the above"
+    },
+    "5": {
+        "question" : "Approximately how long did the Cardassian Occupation last?",
+        "answer" : "a",
+        "a" : "50 years",
+        "b" : "100 years",
+        "c" : "5 years",
+        "d" : "10 years",
+        "e" : "None of the above"
+    },
+    "6": {
+        "question" : "Which DS9 star appears in the movie 'American History X'?",
+        "answer" : "b",
+        "a" : "Edward Furlong",
+        "b" : "Avery Brooks",
+        "c" : "Edward Norton",
+        "d" : "Fairuza Balk",
+        "e" : "None of the above"
+    },
+    "7": {
+        "question" : "Before the Federation took over Deep Space Nine the Cardassians had occupied it. They called it a different name, what was it?",
         "answer" : "c",
-        "a" : "A energy field",
-        "b" : "Sector D",
-        "c" : "The Neutral Zone",
-        "d" : "Klingon Empire",
+        "a" : "Gul",
+        "b" : "Dominion HQ",
+        "c" : "Terok Nor",
+        "d" : "Bajor",
+        "e" : "None of the above"
+    },
+    "8": {
+        "question" : "Who occupied the station before the Federation arrived?",
+        "answer" : "c",
+        "a" : "Romulans",
+        "b" : "Orians",
+        "c" : "Cardassians",
+        "d" : "Kardashians",
+        "e" : "None of the above"
+    },
+    "9": {
+        "question" : "Jadzia Dax was married to which fellow officer?",
+        "answer" : "a",
+        "a" : "Sisko",
+        "b" : "Odo",
+        "c" : "Worf",
+        "d" : "Quark",
+        "e" : "None of the above"
+    },
+    "10": {
+        "question" : "What is the title of Odo, the head of station security?",
+        "answer" : "a",
+        "a" : "Constable",
+        "b" : "Officer",
+        "c" : "Commander",
+        "d" : "Major",
+        "e" : "None of the above"
+    },
+    "11": {
+        "question" : "In the first season episode 'Babel,' a number of DS9's regular cast contracted a bizarre virus that left them incapable of utilizing language in any way. Which character was NOT afflicted with the virus in this episode?",
+        "answer" : "a",
+        "a" : "Quark",
+        "b" : "Odo",
+        "c" : "Dax",
+        "d" : "Sisko",
+        "e" : "None of the above"
+    },
+    "12": {
+        "question" : "Every incarnation of Star Trek needs its token 'character aging prematurely' episode, but which character became old before their time in DS9?",
+        "answer" : "c",
+        "a" : "Sisko",
+        "b" : "Odo",
+        "c" : "Bashir",
+        "d" : "Quark",
+        "e" : "None of the above"
+    },
+    "13": {
+        "question" : " Which actor has appeared in 'DS9' as a Vulcan, a Klingon, a Human and a Changeling?",
+        "answer" : "a",
+        "a" : "J. G. Hertzler",
+        "b" : "Rene Auberjonois",
+        "c" : "Terry Farrell",
+        "d" : "Colm Meaney",
+        "e" : "None of the above"
+    },
+    "14": {
+        "question" : "Who owns a bar on the station?",
+        "answer" : "b",
+        "a" : "No one - its free bar",
+        "b" : "Quark",
+        "c" : "Sisko",
+        "d" : "Work",
+        "e" : "None of the above"
+    },
+    "15": {
+        "question" : "What is the military rank of Doctor Julian Bashir?",
+        "answer" : "c",
+        "a" : "Major",
+        "b" : "Ensign",
+        "c" : "Lieutenant",
+        "d" : "Corpsman",
+        "e" : "No rank - he's a doctor"
+    },
+    "16": {
+        "question" : " In the 5th season episode 'In the Cards', Jake Sisko wants to get his dad a special present at an auction run by Quark. Whose rookie baseball card, from 1951, does Jake get for him?",
+        "answer" : "b",
+        "a" : "Hank Aaron",
+        "b" : "Willy Mays",
+        "c" : "Jackie Robinson",
+        "d" : "Barry Bonds",
+        "e" : "None of the above"
+    },
+    "17": {
+        "question" : " To a member of which species did Garak say 'Well, let me guess! You're either lost, or desperately searching for a good tailor'?",
+        "answer" : "a",
+        "a" : "Klingon",
+        "b" : "Romulan",
+        "c" : "Vulcan",
+        "d" : "Human",
+        "e" : "None of the above"
+    },
+    "18": {
+        "question" : "What was Dr. Bahsir's class rank at Starfleet Academy?",
+        "answer" : "b",
+        "a" : "1st",
+        "b" : "2nd",
+        "c" : "3rd",
+        "d" : "last",
+        "e" : "None - he never graduated"
+    },
+    "19": {
+        "question" : "Who killed Jennifer Sisko?",
+        "answer" : "a",
+        "a" : "Klingon",
+        "b" : "Cardassian",
+        "c" : "Borg",
+        "d" : "Ferengi",
+        "e" : "She died of natural causes"
+    },
+    "20": {
+        "question" : "What race is the chief of security?",
+        "answer" : "d",
+        "a" : "Klingon",
+        "b" : "Borg",
+        "c" : "Xindi",
+        "d" : "Changling",
         "e" : "None of the above"
     }
 }

@@ -9,21 +9,273 @@
         "e" : "None of the above"
     },
     "2": {
-        "question" : "What color shirts did the communications officers wear",
-        "answer" : "d",
-        "a" : "Gold",
-        "b" : "Blue",
-        "c" : "Green",
-        "d" : "Red",
+        "question" : "How long was the USS Enterprise's mission supposed to last?",
+        "answer" : "b",
+        "a" : "3 years",
+        "b" : "5 years",
+        "c" : "10 years",
+        "d" : "Never stated",
         "e" : "None of the above"
     },
     "3": {
+        "question" : "Where did Captain James Kirk serve before the USS Enterprise?",
+        "answer" : "c",
+        "a" : "USS Republic",
+        "b" : "USS Summit",
+        "c" : "USS Farragut",
+        "d" : "USS Defiant",
+        "e" : "None - he had a desk job"
+    },
+    "4": {
+        "question" : "Where did Captain James Kirk serve before the USS Enterprise?",
+        "answer" : "c",
+        "a" : "USS Republic",
+        "b" : "USS Summit",
+        "c" : "USS Farragut",
+        "d" : "USS Defiant",
+        "e" : "None - he had a desk job"
+    },
+    "5": {
+        "question" : "Scotty was played by James Doohan. What country is James originally from?",
+        "answer" : "c",
+        "a" : "Scotland",
+        "b" : "USA",
+        "c" : "Canada",
+        "d" : "Australia",
+        "e" : "None of the above"
+    },
+    "6": {
+        "question" : "Amanda Grayson, Spock's mother, was very fond of one author. Who was her favorite writer?",
+        "answer" : "a",
+        "a" : "Lewis Carroll",
+        "b" : "Ernest Hemingway",
+        "c" : "Jack London",
+        "d" : "William Shakespeare",
+        "e" : "F. Scott Fitzgerald"
+    },
+    "7": {
+        "question" : "The original Star Trek series took place over how many years?",
+        "answer" : "c",
+        "a" : "1 year",
+        "b" : "3 years",
+        "c" : "5 years",
+        "d" : "10 years",
+        "e" : "None of the above"
+    },
+    "8": {
+        "question" : "Leo Francis Walsh was a known galactic criminal and a con man. What was his real name?",
+        "answer" : "c",
+        "a" : "Roger Charles Carmel",
+        "b" : "Zefram Cochrane",
+        "c" : "Harcourt Fenton Muddt",
+        "d" : "Christopher Pike",
+        "e" : "That was his name"
+    },
+    "9": {
+        "question" : "Originally, the creators of the show intended for Spock to be from Mars. Later, however, they changed it to Vulcan. Why?",
+        "answer" : "b",
+        "a" : "They thought it was too similar to George Welles' novel War of the Worlds",
+        "b" : "They thought that humans would walk on Mars soon after the show was launched",
+        "c" : "They wanted something more exotic than a planet from our Solar System",
+        "d" : "At the time of the creation of Star Trek they knew Mars was basically a desert",
+        "e" : "If men were from Mars, the women would have to be from Venus"
+    },
+    "10": {
+        "question" : "Where was James T. Kirk born?",
+        "answer" : "d",
+        "a" : "Arizona",
+        "b" : "Iowa",
+        "c" : "Moonbase Alpha",
+        "d" : "He was born in space onboard the USS Farragut",
+        "e" : "None of the above"
+    },
+    "11": {
         "question" : "What separates the Federation from Romulon space?",
         "answer" : "c",
         "a" : "A energy field",
         "b" : "Sector D",
         "c" : "The Neutral Zone",
         "d" : "Klingon Empire",
+        "e" : "None of the above"
+    },
+    "11": {
+        "question" : "What separates the Federation from Romulon space?",
+        "answer" : "c",
+        "a" : "A energy field",
+        "b" : "Sector D",
+        "c" : "The Neutral Zone",
+        "d" : "Klingon Empire",
+        "e" : "None of the above"
+    },
+    "12": {
+        "question" : "Who was supporting the people of planet Neural with weapons (Episode 19, Season 2, 'A Private Little War')?",
+        "answer" : "b",
+        "a" : "Romulans",
+        "b" : "Klingons",
+        "c" : "Humans",
+        "d" : "Andorians",
+        "e" : "None of the above"
+    },
+    "13": {
+        "question" : "Who designed the costumes for the Star Trek crew?",
+        "answer" : "b",
+        "a" : "Jack Pierce",
+        "b" : "Bill Theiss",
+        "c" : "John Caglione",
+        "d" : "Stan Winston",
+        "e" : "None of the above"
+    },
+    "14": {
+        "question" : "What was the invention of Zefram Cochrane?",
+        "answer" : "c",
+        "a" : "Replicators",
+        "b" : "Holodeck",
+        "c" : "Warp Drive Technology",
+        "d" : "Transporter",
+        "e" : "None of the above"
+    },
+    "15": {
+        "question" : "What does toilet paper and the USS Enterprise have in common",
+        "answer" : "a",
+        "a" : "They both circle uranus looking for klingons",
+        "b" : "Nothing they didn't have toilet paper in space",
+        "c" : "They both have 2 ply",
+        "d" : "This is a joke right?",
+        "e" : "None of the above"
+    },
+    "16": {
+        "question" : "What separates the Federation from Romulon space?",
+        "answer" : "c",
+        "a" : "A energy field",
+        "b" : "Sector D",
+        "c" : "The Neutral Zone",
+        "d" : "Klingon Empire",
+        "e" : "None of the above"
+    },
+    "17": {
+        "question" : "The physiology of the alien race Horta, that caused problems in the mines of Janus VI, is based on which element?",
+        "answer" : "b",
+        "a" : "Lithium",
+        "b" : "Silicon",
+        "c" : "Carbon",
+        "d" : "Sulpur",
+        "e" : "None of the above"
+    },
+    "18": {
+        "question" : "In one episode, James T. Kirk engaged himself in a fight against an individual of the Gorn race on the surface of a desert planet. What was the title of the episode?",
+        "answer" : "a",
+        "a" : "Arena",
+        "b" : "The Enemy Within",
+        "c" : "The Neutral Zone",
+        "d" : "Space Seed",
+        "e" : "None of the above"
+    },
+    "19": {
+        "question" : "One of the members of the crew was chief communications officer Uhura. Her name comes from Swahili word 'uhuru'. What does it mean?",
+        "answer" : "e",
+        "a" : "Light",
+        "b" : "Ebony",
+        "c" : "Star",
+        "d" : "Hope",
+        "e" : "Freedom"
+    },
+    "20": {
+        "question" : "What color is vulcan blood",
+        "answer" : "b",
+        "a" : "Red",
+        "b" : "Green",
+        "c" : "Yellow",
+        "d" : "Blue",
+        "e" : "None of the above"
+    },
+    "21": {
+        "question" : "Dr. McCoy was played by what actor",
+        "answer" : "a",
+        "a" : "James Doohan",
+        "b" : "DeForest Kelley",
+        "c" : "Leonard Nimoy",
+        "d" : "George Takai",
+        "e" : "None of the above"
+    },
+    "22": {
+        "question" : "What is Dr. McCoy's nickname",
+        "answer" : "b",
+        "a" : "Dr. Death",
+        "b" : "Bones",
+        "c" : "Doc",
+        "d" : "Mac",
+        "e" : "None of the above"
+    },
+    "23": {
+        "question" : "How many episodes are in the Original Series",
+        "answer" : "c",
+        "a" : "75",
+        "b" : "80",
+        "c" : "79",
+        "d" : "100",
+        "e" : "None of the above"
+    },
+    "24": {
+        "question" : "What size crew did Captain Kirk command aboard the Enterprise?",
+        "answer" : "a",
+        "a" : "430",
+        "b" : "200",
+        "c" : "1030",
+        "d" : "500",
+        "e" : "None of the above"
+    },
+    "25": {
+        "question" : "In TV's original Star Trek series, how did a salt shaker serve as a prop on early episodes?",
+        "answer" : "a",
+        "a" : "Communicator",
+        "b" : "Listening Device",
+        "c" : "Medical Scanner",
+        "d" : "Grenade",
+        "e" : "None of the above"
+    },
+    "26": {
+        "question" : "In TV's Star Trek, who commanded the U.S.S. Enterprise Before Capt. James T. Kirk took command?",
+        "answer" : "d",
+        "a" : "Captain Janeway",
+        "b" : "Captain Archer",
+        "c" : "Captain America",
+        "d" : "Captain Pike",
+        "e" : "None of the above"
+    },
+    "27": {
+        "question" : "What is in Mr. Spock's blood that gives him green skin?",
+        "answer" : "c",
+        "a" : "Bronze and Copper",
+        "b" : "Chlorophyll",
+        "c" : "Copper and Nickel",
+        "d" : "Green M&Ms",
+        "e" : "None of the above"
+    },
+    "28": {
+        "question" : "In the original draft for the Star Trek TV series what was the name of the U.S.S. Enterprise?",
+        "answer" : "c",
+        "a" : "USS Voyager",
+        "b" : "USS Intrepid",
+        "c" : "USS Yorktown",
+        "d" : "USS Asimov",
+        "e" : "None of the above"
+    },
+    "29": {
+        "question" : "What was antimatter used for on the starship Enterprise on the Star Trek TV series?",
+        "answer" : "c",
+        "a" : "Makes the transporter work",
+        "b" : "Allows you to go back and forth thru time",
+        "c" : "Powers the warp engines",
+        "d" : "Prevents alternate realities from destroying the current reality",
+        "e" : "None of the above"
+    },
+    "30": {
+        "question" : "Before gaining fame on Star Trek, in what movie did actor Leonard Nimoy first appear as an alien from outer space?",
+        "answer" : "c",
+        "a" : "Cowboys and Aliens",
+        "b" : "Rawhide",
+        "c" : "In The Zombie Vanguard",
+        "d" : "Earth Girls are Easy",
         "e" : "None of the above"
     }
 }
