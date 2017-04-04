@@ -69,12 +69,7 @@ class TriviaController extends Controller
 
         // redirect to the game page to show the first question
         // using redirect so that reload will work properly
-        return redirect('/game')->with([
-            'question' => $question,
-            'qno' => $qno,
-            'score' => $score,
-            'logo' => $displayLogo,
-        ]);
+        return redirect('/game');
     }
 
     /**
@@ -142,12 +137,6 @@ class TriviaController extends Controller
 
             // game is over - redirect tot he score page to show the results
             return redirect('/score');
-            //->with([
-            //    'qno' => $qno,
-            //    'score' => $score,
-            //    'time' => $time,
-            //    'logo' => $displayLogo,
-            //]);
         }
 
         // increment the question number
@@ -162,12 +151,7 @@ class TriviaController extends Controller
         $request->session()->save();
 
         // redirect to the game page with the new question
-        return redirect('/game')->with([
-            'question' => $question,
-            'qno' => $qno,
-            'score' => $score,
-            'logo' => $displayLogo,
-        ]);
+        return redirect('/game');
     }
 
     /*
@@ -209,45 +193,37 @@ class TriviaController extends Controller
         // or quit and go back to the main menu
         switch($request->input('play')) {
 
-            case 'Play Again?':
+            case 'Play Again':
+                // get the game
                 $game = $request->session()->get('game', 'default');
-                $displayLogo = $request->session()->get('logo', 'default');
 
-                // reset the game
+                // reset the game parameters
                 $qno = 1;
                 $score = 0;
-
+                $time = time();
 
                 // get the next question
                 $question = $game->getQuestion();
 
+                // save the game session data
                 $request->session()->put('question', $question);
                 $request->session()->put('qno', $qno);
                 $request->session()->put('score', $score);
+                $request->session()->put('time', $time);
                 $request->session()->save();
 
                 // start the game over
-                return redirect('/game')->with([
-                    'question' => $question,
-                    'qno' => $qno,
-                    'score' => $score,
-                    'logo' => $displayLogo,
-                ]);
+                return redirect('/game');
             break;
 
             case 'Quit':
             default:
-                $category = $request->session()->get('category', 'default');
-                $elite = $request->session()->get('elite', 'default');
-                $gametype = $request->session()->get('gametype', 'default');
-
+                // flush the data so that a new game game be started
                 $request->session()->flush();
                 $request->session()->save();
-                return redirect('/play')->with([
-                    'category' => $category,
-                    'elite' => $elite,
-                    'gametype' => $gametype,
-                ]);
+
+                // go to the play page
+                return redirect('/play');
             break;
         }
     }

@@ -27,13 +27,13 @@
         "e" : "None - he had a desk job"
     },
     "4": {
-        "question" : "Where did Captain James Kirk serve before the USS Enterprise?",
+        "question" : "How many seasons did the original series run for?",
         "answer" : "c",
-        "a" : "USS Republic",
-        "b" : "USS Summit",
-        "c" : "USS Farragut",
-        "d" : "USS Defiant",
-        "e" : "None - he had a desk job"
+        "a" : "1",
+        "b" : "2",
+        "c" : "3",
+        "d" : "4",
+        "e" : "None - there was only a pilot"
     },
     "5": {
         "question" : "Scotty was played by James Doohan. What country is James originally from?",
@@ -82,7 +82,7 @@
     },
     "10": {
         "question" : "Where was James T. Kirk born?",
-        "answer" : "d",
+        "answer" : "b",
         "a" : "Arizona",
         "b" : "Iowa",
         "c" : "Moonbase Alpha",
@@ -93,18 +93,18 @@
         "question" : "What separates the Federation from Romulon space?",
         "answer" : "c",
         "a" : "A energy field",
-        "b" : "Sector D",
+        "b" : "Delta quadrant",
         "c" : "The Neutral Zone",
         "d" : "Klingon Empire",
         "e" : "None of the above"
     },
     "11": {
-        "question" : "What separates the Federation from Romulon space?",
-        "answer" : "c",
-        "a" : "A energy field",
-        "b" : "Sector D",
-        "c" : "The Neutral Zone",
-        "d" : "Klingon Empire",
+        "question" : "What year did the original series first air?",
+        "answer" : "d",
+        "a" : "1954",
+        "b" : "1961",
+        "c" : "1975",
+        "d" : "1967",
         "e" : "None of the above"
     },
     "12": {
@@ -144,13 +144,13 @@
         "e" : "None of the above"
     },
     "16": {
-        "question" : "What separates the Federation from Romulon space?",
+        "question" : "Whose voice was the Enterprise conputer?",
         "answer" : "c",
-        "a" : "A energy field",
-        "b" : "Sector D",
-        "c" : "The Neutral Zone",
-        "d" : "Klingon Empire",
-        "e" : "None of the above"
+        "a" : "Nicelle Nichols",
+        "b" : "Majel Barrett",
+        "c" : "James Earl Jones",
+        "d" : "HAL 9000",
+        "e" : "None - it was synthesised"
     },
     "17": {
         "question" : "The physiology of the alien race Horta, that caused problems in the mines of Janus VI, is based on which element?",
@@ -190,7 +190,7 @@
     },
     "21": {
         "question" : "Dr. McCoy was played by what actor",
-        "answer" : "a",
+        "answer" : "b",
         "a" : "James Doohan",
         "b" : "DeForest Kelley",
         "c" : "Leonard Nimoy",
@@ -226,7 +226,7 @@
     },
     "25": {
         "question" : "In TV's original Star Trek series, how did a salt shaker serve as a prop on early episodes?",
-        "answer" : "a",
+        "answer" : "c",
         "a" : "Communicator",
         "b" : "Listening Device",
         "c" : "Medical Scanner",

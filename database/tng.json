@@ -21,7 +21,7 @@
         "question" : "What separates the Federation from Romulon space?",
         "answer" : "c",
         "a" : "A energy field",
-        "b" : "Sector D",
+        "b" : "Delta quadrant",
         "c" : "The Neutral Zone",
         "d" : "Klingon Empire",
         "e" : "None of the above"
@@ -55,7 +55,7 @@
     },
     "7": {
         "question" : "When Patrick Stewart asked Gene Roddenberry to give him more information on the character of Captain Jean-Luc Picard, Roddenberry sent him what book(s)?",
-        "answer" : "c",
+        "answer" : "d",
         "a" : "The Pirate Captain by Kerry Lynee",
         "b" : "The Story of Robin Hood and his Merrie Men by Lawrence Edward Watkin",
         "c" : "The Time Machine by H.G. Wells",

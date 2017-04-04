@@ -81,7 +81,7 @@
         "e" : "None of the above"
     },
     "10": {
-        "question" : "What is Ensign Sato's first name. ",
+        "question" : "What is Ensign Sato's first name?",
         "answer" : "b",
         "a" : "Hiro",
         "b" : "Hoshi",
@@ -109,7 +109,7 @@
     },
     "13": {
         "question" : "Surveying an uninhabited planet in the season two episode 'Minefield', the Enterprise got hit by a cloaked mine. Another attached itself to its hull. What race had put the mines around the planet?",
-        "answer" : "a",
+        "answer" : "b",
         "a" : "Romulans",
         "b" : "Klingons",
         "c" : "Xindi",
@@ -127,7 +127,7 @@
     },
     "15": {
         "question" : "In 'Fight or Flight', what reason does Dr. Phlox give as to why he's interested in helping to keep Ensign Hoshi Sato's pet alive?",
-        "answer" : "c",
+        "answer" : "b",
         "a" : "He wants to cross-breed it with his Algean Rat",
         "b" : "He wants to feed it to his bat",
         "c" : "He wants to eat its eggs",
@@ -144,7 +144,7 @@
         "e" : "None of the above"
     },
     "17": {
-        "question" : "What is Chief Engineer Trip's full name",
+        "question" : "What is Chief Engineer Trip's full name?",
         "answer" : "b",
         "a" : "Montgomery Scott",
         "b" : "Charles Tucker",
@@ -181,7 +181,7 @@
     },
     "21": {
         "question" : "Most of you know Jonathan Archer brought his dog, an adorable beagle, with him on the Enterprise. This lucky dog was named Porthos and he had a favorite snack but unfortunately this snack sometimes gave him gastrointestinal problems which has been the reason for at least one trip to sickbay. What was Porthos' favorite snack?",
-        "answer" : "c",
+        "answer" : "b",
         "a" : "bologna",
         "b" : "cheese",
         "c" : "bacos",
@@ -190,7 +190,7 @@
     },
     "22": {
         "question" : "The start of the third season of saw the introduction of non-Starfleet personnel from Military Assault Command Operations (MACOs). Which character was the MACO commander?",
-        "answer" : "a",
+        "answer" : "b",
         "a" : "Major Payne",
         "b" : "Major Hayes",
         "c" : "Commander Riker",
@@ -217,7 +217,7 @@
     },
     "25": {
         "question" : "In 'Sleeping Dogs', T'Pol and Hoshi Sato enter the Klingon galley and find Gagh. What is Gagh?",
-        "answer" : "c",
+        "answer" : "d",
         "a" : "Lizard brains",
         "b" : "Cochroach Stew",
         "c" : "Sushi",
@@ -234,13 +234,13 @@
         "e" : "None of the above"
     },
     "27": {
-        "question" : " In 'Chosen Realm', Captain Archer comes to the aid of a group of religious pilgrims. These people soon hijack the Enterprise to end a religious war. What was the name of the group of people?",
-        "answer" : "a",
-        "a" : "Triannons",
-        "b" : "Gothians",
-        "c" : "Mormans",
-        "d" : "Xindians",
-        "e" : "None of the above"
+        "question" : "How many seasons did Enterprise run for?",
+        "answer" : "d",
+        "a" : "1",
+        "b" : "2",
+        "c" : "3",
+        "d" : "4",
+        "e" : "5"
     },
     "28": {
         "question" : "In what month was the first Xindi attack on Earth?",
@@ -261,7 +261,7 @@
         "e" : "Arboreals"
     },
     "30": {
-        "question" : "How many sentient beings make up the Xindi",
+        "question" : "How many sentient beings make up the Xindi?",
         "answer" : "a",
         "a" : "6",
         "b" : "2",

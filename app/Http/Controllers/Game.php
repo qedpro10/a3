@@ -14,7 +14,7 @@ class Game {
     /*
      * Constructor
      */
-    public function __construct($category, $level, $numQuestions = 10) {
+    public function __construct($category, $level, $numQuestions = 2) {
         $this->category = $category;
         $this->numQuestions = $numQuestions;
 

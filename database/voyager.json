@@ -1,6 +1,6 @@
 {
     "1": {
-        "question" : "Who was the captain of Voyager",
+        "question" : "Who was the captain of Voyager?",
         "answer" : "b",
         "a" : "Spock",
         "b" : "Katherine Janeway",
@@ -9,8 +9,8 @@
         "e" : "None of the above"
     },
     "2": {
-        "question" : "What happened to Voyager such that they couldn't go home",
-        "answer" : "d",
+        "question" : "What happened to Voyager such that they couldn't go home?",
+        "answer" : "c",
         "a" : "Trapped behind energy field",
         "b" : "Destroyed by the Borg",
         "c" : "Went thru a worm hole to the Delta quadrant",
@@ -37,7 +37,7 @@
     },
     "5": {
         "question" : "How far did Voyager get flung by the Caretaker?",
-        "answer" : "e",
+        "answer" : "d",
         "a" : "185,000 Light Years",
         "b" : "10,000 Light Years",
         "c" : "150,000 Light Years",
@@ -56,7 +56,7 @@
     "7": {
         "question" : "What is the average life span of an Ocampa?",
         "answer" : "e",
-        "a" : "Bwtween 25-30 years",
+        "a" : "Between 25-30 years",
         "b" : "18 years",
         "c" : "50 years",
         "d" : "90 years",
@@ -91,7 +91,7 @@
     },
     "11": {
         "question" : "Q, the son of Q, befriended which Voyager inhabitant?",
-        "answer" : "c",
+        "answer" : "a",
         "a" : "Icheb",
         "b" : "Tom Paris",
         "c" : "Seven of Nine",
