@@ -11,7 +11,7 @@ class TriviaController extends Controller
 
     /**
 	* GET
-    * /
+    * /play - start the game
 	*/
     public function index(Request $request) {
 
@@ -22,8 +22,8 @@ class TriviaController extends Controller
         ]);
     }
     /**
-    * GET
-    * /play
+    * POST
+    * /play - sets up game, then redirects to /game
     */
     public function postGame(Request $request) {
 
@@ -40,29 +40,49 @@ class TriviaController extends Controller
 
 
         $triviaGame = new Game($category, $elite);
-        $game = $triviaGame->getGame();
+        //$game = $triviaGame->getGame();
 
         $displayLogo = $triviaGame->getLogo();
         // initialize the game parameters score and question number (qno)
         $score = 0;
         $qno = 1;
 
+        // get the start time
+        $startTime = time();
+
         // save this data in the session
+        $question = $triviaGame->getQuestion();
+
         $request->session()->put('stgame', $triviaGame);
+        $request->session()->put('question', $question);
         $request->session()->put('qno', $qno);
         $request->session()->put('score', $score);
         $request->session()->put('logo', $displayLogo);
         $request->session()->put('gametype', $gametype);
         $request->session()->put('elite', $elite);
         $request->session()->put('category', $category);
+        $request->session()->put('time', $startTime);
+        $request->session()->save();
 
-        // get the question
-        $question = $triviaGame->getQuestion();
-        $request->session()->put('question', $question);
+        return redirect('/game')->with([
+            'question' => $question,
+            'qno' => $qno,
+            'score' => $score,
+            'logo' => $displayLogo,
+        ]);
+    }
 
-        // get the start time
-        $startTime = time();
-        $request->session()->put('startTime', $startTime);
+    /**
+    * GET
+    * /game
+    * Show the question; to be repeated for the number of questions
+    * in the quiz
+    */
+    public function showQuestion(Request $request) {
+        $question= $request->session()->get('question');
+        $qno = $request->session()->get('qno');
+        $score = $request->session()->get('score');
+        $displayLogo = $request->session()->get('logo');
 
         return view('trivia.game')->with([
             'question' => $question,
@@ -75,18 +95,15 @@ class TriviaController extends Controller
     /**
     * POST
     * /game
-    * Process the question and add to score
+    * checks the answer and redirects back to showQuestion
     */
-    public function processQuestion(Request $request) {
+    public function checkAnswer(Request $request) {
+
         // get the game session data
-        $stgame = $request->session()->get('stgame', 'default');
-        $question = $request->session()->get('question', 'default');
-        $qno = $request->session()->get('qno', 'default');
-        $score = $request->session()->get('score', 'default');
-        $displayLogo = $request->session()->get('logo', 'default');
-
-
-        $answer = $question['answer'];
+        $question = $request->session()->get('question');
+        $qno = $request->session()->get('qno');
+        $score = $request->session()->get('score');
+        $displayLogo = $request->session()->get('logo');
 
         // update the score
         if ($request->input('question') == $question['answer']) {
@@ -100,10 +117,8 @@ class TriviaController extends Controller
             $gametype = $request->session()->get('gametype');
             if($gametype == 'warp') {
                 // get the end time
-                $startTime = $request->session()->get('startTime');
+                $startTime = $request->session()->get('time');
                 $endTime = time();
-                //dump($startTime);
-                //dump($endTime);
                 $time = $endTime-$startTime;
             }
             else {
@@ -112,7 +127,10 @@ class TriviaController extends Controller
 
             // game is complete
             // switch to gameover view
-            return view('trivia.score')->with([
+            $request->session()->put('time', $time);
+            $request->session()->save();
+            //return view('trivia.score')->with([
+            return redirect('/score')->with([
                 'qno' => $qno,
                 'score' => $score,
                 'time' => $time,
@@ -122,15 +140,33 @@ class TriviaController extends Controller
 
         // increment the question number
         $qno++;
-        // save the session data and go to the next question
-        $request->session()->put('qno', $qno);
 
-        // get the next question and store it
+        // get the next random question and store it
+        $stgame = $request->session()->get('stgame', 'default');
         $question = $stgame->getQuestion();
-        $request->session()->put('question', $question);
 
-        return view('trivia.game')->with([
+        // save the session data and go to the next question
+        $request->session()->put('question', $question);
+        $request->session()->put('qno', $qno);
+        $request->session()->save();
+
+        return redirect('/game')->with([
             'question' => $question,
+            'qno' => $qno,
+            'score' => $score,
+            'logo' => $displayLogo,
+        ]);
+    }
+
+    public function showScore(Request $request) {
+
+        $score = $request->session()->get('score');
+        $time = $request->session()->get('time');
+        $displayLogo = $request->session()->get('logo');
+        $qno = $request->session()->get('qno');
+
+        return view('trivia.score')->with([
+            'time' => $time,
             'qno' => $qno,
             'score' => $score,
             'logo' => $displayLogo,
@@ -155,15 +191,18 @@ class TriviaController extends Controller
                 // reset the game
                 $qno = 1;
                 $score = 0;
-                $request->session()->put('qno', $qno);
-                $request->session()->put('score', $score);
+
 
                 // get the next question
                 $question = $stgame->getQuestion();
+
                 $request->session()->put('question', $question);
+                $request->session()->put('qno', $qno);
+                $request->session()->put('score', $score);
+                $request->session()->save();
 
                 // start the game over
-                return view('trivia.game')->with([
+                return redirect('/game')->with([
                     'question' => $question,
                     'qno' => $qno,
                     'score' => $score,

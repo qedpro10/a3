@@ -12,7 +12,7 @@
 @section('quiz')
     <h1>Question {{ $qno }}</h1>
 
-    <form method='POST' action='/game'>
+    <form method='POST' action='/game/checkAnswer'>
         {{ csrf_field() }}
         <h3>{{ $question['question'] }}</h3>
         <ul>

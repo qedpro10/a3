@@ -53,12 +53,10 @@ class Game {
 
         // read the file and load the questions
         $questions = file_get_contents(database_path().$this->gameFile);
-        //dump($questions);
 
         # Decode the book JSON data into an array
         # Nothing fancy here; just a built in PHP method
         $this->game = json_decode($questions, true);
-        dump($this->logo);
 
     }
 
