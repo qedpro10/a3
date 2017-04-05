@@ -103,6 +103,12 @@ class TriviaController extends Controller
     */
     public function checkAnswer(Request $request) {
 
+        // Use validation to force the user to select an answer
+        // before hitting submit
+        $this->validate($request, [
+            'question' => 'required',
+        ]);
+
         // get the game session data
         $question = $request->session()->get('question');
         $qno = $request->session()->get('qno');

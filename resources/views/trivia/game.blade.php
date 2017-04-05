@@ -33,8 +33,17 @@
             </li>
         </ul>
 
-            <input type='submit' class="btn btn-info btn-md btn-calc" value='Submit'>
+        <input type='submit' class="btn btn-info btn-md btn-calc" value='Submit'>
+        @if(count($errors) > 0)
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        @endif
 
     </form>
+
+
 
 @endsection
