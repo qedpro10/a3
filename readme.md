@@ -47,10 +47,14 @@ I stole from the internet from the following sites
 www.gettyimages.com/photos/star-trek
 https://www.google.com/search?q=star+trek+pictures&espv=2&tbm=isch&tbo=u&source=univ&sa=X&sqi=2&ved=0ahUKEwiPk7Pj1ovTAhWkqlQKHcAVDU0Q7AkINA&biw=1161&bih=640
 
+During debug session, Professor Buck provided a template for the setup of the controller that I used to get the pages working properly.
+
+
 Known Issues
 1.  I believe I have fixed this issue but when you refresh a game page while in Warp mode sometimes the time out come back as a huge number (i.e it was negative).  But I believe i fixed that since I haven't seen it lately.
 2. I don't like the way the submit button bounces around.  That's a CSS thing and I didn't want to waste time on that.
-3.
+3. The random selection of questions sometimes allows for repeat questions.  The solution to this is better handled at the database so I didn't bother to do any checking here.
+4. HTML validation has a warning.  This is because the master page has 2 sections that can be filled in.  the play and score views fill in the section that is centered.  The game view fills in the quiz section.  This was done so that there could be 2 format types.
 
 Things I Would Improve On
 1. Make it so that the score page shows what you got right and wrong.
@@ -61,3 +65,4 @@ as you can in a selected amount of time.
 5. Have picture questions.  Something like show a picture of a communciator and ask What is this?
 Most of these things would be better served by the utilization of a database, which is
 why I didn't implement them in this assignment.
+6. Randomize the answers.

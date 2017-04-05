@@ -1,7 +1,5 @@
 
-.mainlogo {
 
-}
 
 #top {
   text-align:center;
@@ -23,7 +21,7 @@
 
 #gamestyle {
     display:inline-block;
-    margin:0 auto"
+    margin:0 auto;
 }
 
 li {
@@ -47,4 +45,8 @@ li {
 .quiz {
     margin-left: auto;
     margin-right: auto;
+}
+
+.picture {
+    height: 250px;
 }

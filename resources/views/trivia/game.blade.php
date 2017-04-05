@@ -10,11 +10,11 @@
 @endsection
 
 @section('quiz')
-    <h2>Question {{ $qno }}</h2>
+    <h3>Question {{ $qno }}</h3>
 
     <form method='POST' action='/game/checkAnswer'>
         {{ csrf_field() }}
-        <h3>{{ $question['question'] }}</h3>
+        <h4>{{ $question['question'] }}</h4>
         <ul>
             <li>
                 <label><input type='radio' name='question' value='a'> {{$question['a']}}</label>

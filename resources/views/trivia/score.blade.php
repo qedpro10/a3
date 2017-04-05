@@ -11,9 +11,9 @@
 
 @section('content')
 
-    <h2>Score:  {{$score}}/{{$qno}}</h2>
+    <h3>Score:  {{$score}}/{{$qno}}</h3>
     @if($time != 0)
-        <h2>Time: {{$time}} seconds</h2>
+        <h3>Time: {{$time}} seconds</h3>
     @endif
 
     <form method='POST' action='/score'>

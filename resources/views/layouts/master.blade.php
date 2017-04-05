@@ -18,10 +18,10 @@
 </head>
 <body>
 
-    <header class="mainlogo">
+    <header>
         <div id="top">
             <div class="banner">
-                <img src=@yield('picture','images/st_tng.jpg') style='height:250px' alt="ST_Logo">
+                <img class="picture" src=@yield('picture','images/st_tng.jpg') alt="ST_Logo">
             </div>
             <div class="banner">
                 <h1>Star Trekivia</h1>
@@ -32,13 +32,14 @@
     <div class="container">
         <div class="row">
                 <section class="mainpage">
+                    <h1></h1>
                     @yield('content')
                 </section>
 
                 <section>
+                    <h1></h1>
                     @yield('quiz')
                 </section>
-
         </div>
     </div>
 
