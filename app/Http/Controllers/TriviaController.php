@@ -30,6 +30,7 @@ class TriviaController extends Controller
         # Only play game if a category has been selected
         $this->validate($request, [
             'category' => 'required',
+            'gametype' => 'in:impulse,warp',
         ]);
 
 
