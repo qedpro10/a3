@@ -10,7 +10,6 @@
 
     <link rel="icon" type="images/png" href="images/favicon.ico">
     <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'>
-    <link href='https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css' rel='stylesheet'>
     <link href="/css/trivia.css" type='text/css' rel='stylesheet'>
 
     @stack('head')
@@ -31,23 +30,19 @@
 
     <div class="container">
         <div class="row">
-                <section class="mainpage">
-                    <h1></h1>
-                    @yield('content')
-                </section>
+            <div class="mainpage">
+                @yield('content')
+            </div>
 
-                <section>
-                    <h1></h1>
-                    @yield('quiz')
-                </section>
+            <div>
+                @yield('quiz')
+            </div>
         </div>
     </div>
 
     <footer class="foot">
         <p>Jen Tiberius Smith &copy; {{ date('Y') }}</p>
     </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
     @stack('body')
 
