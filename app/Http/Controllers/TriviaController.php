@@ -38,8 +38,8 @@ class TriviaController extends Controller
         $elite = $request->has('elite');
         $gametype = $request->input('gametype', null);
 
-        // instantiate a new game
-        $game = new Game($category, $elite);
+        // instantiate a new game 5 questions per game
+        $game = new Game($category, $elite, 5);
 
         // get the logo of the game (based on category selected when game
         // was instantiated)

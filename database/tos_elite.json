@@ -67,7 +67,7 @@
         "answer" : "c",
         "a" : "Roger Charles Carmel",
         "b" : "Zefram Cochrane",
-        "c" : "Harcourt Fenton Muddt",
+        "c" : "Harcourt Fenton Mudd",
         "d" : "Christopher Pike",
         "e" : "That was his name"
     },
@@ -144,7 +144,7 @@
         "e" : "None of the above"
     },
     "16": {
-        "question" : "Whose voice was the Enterprise conputer?",
+        "question" : "Whose voice was the Enterprise computer?",
         "answer" : "c",
         "a" : "Nicelle Nichols",
         "b" : "Majel Barrett",
@@ -180,7 +180,7 @@
         "e" : "Freedom"
     },
     "20": {
-        "question" : "What color is vulcan blood",
+        "question" : "What color is Vulcan blood",
         "answer" : "b",
         "a" : "Red",
         "b" : "Green",
@@ -194,7 +194,7 @@
         "a" : "James Doohan",
         "b" : "DeForest Kelley",
         "c" : "Leonard Nimoy",
-        "d" : "George Takai",
+        "d" : "George Takei",
         "e" : "None of the above"
     },
     "22": {
@@ -261,10 +261,10 @@
         "e" : "None of the above"
     },
     "29": {
-        "question" : "What was antimatter used for on the starship Enterprise on the Star Trek TV series?",
+        "question" : "What was antimatter used for on the starship Enterprise?",
         "answer" : "c",
         "a" : "Makes the transporter work",
-        "b" : "Allows you to go back and forth thru time",
+        "b" : "Allows you to go back and forth through time",
         "c" : "Powers the warp engines",
         "d" : "Prevents alternate realities from destroying the current reality",
         "e" : "None of the above"

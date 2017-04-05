@@ -10,7 +10,8 @@
 @endsection
 
 @section('content')
-
+    <h4>Please select your game</h4>
+    <br>
     <form method='POST' action='/play'>
         {{ csrf_field() }}
         <label>Select the series:  </label>
